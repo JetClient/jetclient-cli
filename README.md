@@ -99,10 +99,19 @@ jobs:
           reporter: java-junit
 ```
 
+## Project Structure
+
+CLI looks for `jetclient.md` in:
+1. Current directory
+2. `.jetclient/` subdirectory
+
+Run from project root or `.jetclient/` folder.
+
 ## Usage
 
 ```bash
-jetclient run [PROJECT_DIR] [OPTIONS]
+jetclient run [PROJECT_DIR] [OPTIONS]   # Execute requests and tests
+jetclient version                        # Show CLI version
 ```
 
 ### Options
@@ -121,12 +130,20 @@ jetclient run [PROJECT_DIR] [OPTIONS]
 | `-n, --iterations <N>` | Number of times to run (default: 1) |
 | `--delay <MS>` | Delay between iterations in milliseconds |
 
+**Default reporter outputs** (when `--reporter-out` not specified):
+- JSON: `./jetclient-report.json`
+- JUnit: `./jetclient-report.xml`
+- HTML: `./jetclient-report.html`
+
 ### Environment Variables
 
 | Variable | Description |
 |----------|-------------|
 | `JETCLIENT_ENV` | Comma-separated environments to activate |
+| `JETCLIENT_ITEMS` | Comma-separated item IDs or paths to run |
+| `JETCLIENT_VAR_*` | Runtime variables (e.g., `JETCLIENT_VAR_apiKey=secret`) |
 | `JETCLIENT_INSECURE` | Set to `true` to disable SSL verification |
+| `JETCLIENT_PROXY` | Proxy URL (e.g., `http://proxy:8080`) |
 
 ## Examples
 
@@ -155,6 +172,8 @@ Generate JSON report:
 jetclient run ./my-api-project -r json --reporter-out json=./report.json
 ```
 
+**Note:** Items (`-i`) can be specified by path (contains `/`) or ID.
+
 ## Exit Codes
 
 | Code | Description |
@@ -166,4 +185,4 @@ jetclient run ./my-api-project -r json --reporter-out json=./report.json
 
 ## Documentation
 
-For more information, visit [jetclient.io](https://jetclient.io)
+For more information, visit [jetclient.io/docs/cli](https://jetclient.io/docs/cli)
