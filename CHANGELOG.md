@@ -6,7 +6,7 @@
 
 - Enable cookie jar for HTTP requests
 
-## [1.0.0] - 2024-12-28
+## [1.0.0] - 2026-02-02
 
 ### Added
 
