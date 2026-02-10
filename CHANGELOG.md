@@ -1,6 +1,12 @@
 # Changelog
 
-## [1.0.0] - 2026-02-02
+## [1.0.1] - 2026-02-10
+
+### Fixed
+
+- Enable cookie jar for HTTP requests
+
+## [1.0.0] - 2024-12-28
 
 ### Added
 
