@@ -8,7 +8,7 @@ Command-line interface for running JetClient API requests and tests.
 
 ## Installation
 
-1. Download the latest release (`jetclient-cli.zip` or `jetclient-cli.tar.gz`)
+1. Download the latest release from [GitHub Releases](https://github.com/JetClient/jetclient-cli/releases) (`jetclient-cli.zip` or `jetclient-cli.tar.gz`)
 2. Extract the archive:
    ```bash
    # For zip
@@ -54,7 +54,8 @@ jetclient --help
 
 ## Docker
 
-### Pull from GitHub Container Registry
+Docker images are available on [GitHub Packages](https://github.com/JetClient/jetclient-cli/pkgs/container/jetclient-cli).
+
 ```bash
 docker pull ghcr.io/jetclient/jetclient-cli:latest
 ```
