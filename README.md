@@ -144,6 +144,10 @@ jetclient version                        # Show CLI version
 | `JETCLIENT_VAR_*` | Runtime variables (e.g., `JETCLIENT_VAR_apiKey=secret`) |
 | `JETCLIENT_INSECURE` | Set to `true` to disable SSL verification |
 | `JETCLIENT_PROXY` | Proxy URL (e.g., `http://proxy:8080`) |
+| `JETCLIENT_NO_COLOR` | Disable colored output (any value) |
+| `NO_COLOR` | Standard [no-color](https://no-color.org/) convention |
+| `NO_PROXY` | Comma-separated hosts to bypass proxy |
+| `HTTPS_PROXY` / `HTTP_PROXY` | Standard proxy env vars (lower priority than `JETCLIENT_PROXY`) |
 
 ## Examples
 
