@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.2] - 2026-02-15
+
+### Fixed
+
+- Show detailed output for `jc.runFolder` in reporters ([#2](https://github.com/JetClient/jetclient-cli/issues/2))
+- Remove 10 KB response body truncation from reports ([#2](https://github.com/JetClient/jetclient-cli/issues/2))
+
 ## [1.0.1] - 2026-02-10
 
 ### Fixed
