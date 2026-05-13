@@ -1,5 +1,11 @@
 # Changelog
 
+## [1.0.3] - 2026-05-13
+
+### Fixed
+
+- Render HTML report tree in script execution order
+
 ## [1.0.2] - 2026-02-15
 
 ### Fixed
